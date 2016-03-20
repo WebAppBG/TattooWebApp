@@ -1,0 +1,41 @@
+﻿<div class="diagonal-background-blog-before">
+    <!-- this is an empty element -->
+</div>
+<section class="blog" ng-controller="HomeNewsCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <h2>
+                    {{sectionTitle}}
+                </h2>
+                <h3 class="text-primary">
+                    {{sectionDesc}}
+                </h3>
+                <div class="grid">
+                    <div class="col-md-4" ng-repeat="post in latestNews">
+                        <figure class="effect-jazz">
+                            <img ng-src="{{post.featuredImage}}" alt="{{post.title}}"/>
+                            <figcaption>
+                                <h2>
+                                    {{post.title}}
+                                </h2>
+                                <p>
+                                    {{post.excerpt}}
+                                </p>
+                                <a href="#">
+                                    Прочети
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+    /.blog
+-->
+<div class="diagonal-background-blog-after">
+    <!-- this is an empty element -->
+</div>

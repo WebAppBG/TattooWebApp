@@ -1,0 +1,89 @@
+<!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Angular App</title>
+    <meta name="description" content="TattooLife is a platform for tattoo artists and people, seeking tattoos.">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- build:css styles/vendor.css -->
+        <!-- injector:bowercss -->
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="lib/hover/css/hover.css">
+        <link rel="stylesheet" href="lib/animate.css/animate.css">
+        <!-- endinjector -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/custom.css -->
+        <!-- injector:css -->
+        <link rel="stylesheet" href="css/customcordova.css">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/set2.css">
+        <link rel="stylesheet" href="css/template.css">
+        <!-- endinjector -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="cordova.js"></script>
+  </head>
+
+  <body>
+    <div ng-include="'modules/core/partials/menu.html'"></div>
+    
+    <div role="main" id="uiview" ui-view></div><!-- /.main -->
+
+    <div ng-include="'modules/core/partials/footer.html'"></div>
+
+    <div ng-include="'modules/core/partials/modal-dialog.html'"></div>
+
+    <div ng-include="'modules/core/partials/scroll-top.html'"></div>
+
+    <!-- build:js scripts/vendor.js -->
+        <!-- injector:bowerjs -->
+        <script src="lib/jquery/dist/jquery.js"></script>
+        <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-resource/angular-resource.js"></script>
+        <script src="lib/angular-mocks/angular-mocks.js"></script>
+        <script src="lib/angular-cookies/angular-cookies.js"></script>
+        <script src="lib/angular-animate/angular-animate.js"></script>
+        <script src="lib/angular-touch/angular-touch.js"></script>
+        <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+        <script src="lib/angular-ui-utils/ui-utils.js"></script>
+        <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="lib/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js"></script>
+        <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <!-- endinjector -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/custom.js -->
+        <!-- injector:js -->
+        <script src="js/config.js"></script>
+        <script src="js/application.js"></script>
+        <script src="modules/core/core.js"></script>
+        <script src="modules/core/config/routes.js"></script>
+        <script src="modules/core/controllers/ArtistsPageCtrl.js"></script>
+        <script src="modules/core/controllers/EventsPageCtrl.js"></script>
+        <script src="modules/core/controllers/FooterCtrl.js"></script>
+        <script src="modules/core/controllers/GalleryPageCtrl.js"></script>
+        <script src="modules/core/controllers/HomeArtistsCtrl.js"></script>
+        <script src="modules/core/controllers/HomeCarouselCtrl.js"></script>
+        <script src="modules/core/controllers/HomeContactsCtrl.js"></script>
+        <script src="modules/core/controllers/HomeController.js"></script>
+        <script src="modules/core/controllers/HomeGalleryCtrl.js"></script>
+        <script src="modules/core/controllers/HomeNewsCtrl.js"></script>
+        <script src="modules/core/controllers/HomeSimulatorCtrl.js"></script>
+        <script src="modules/core/controllers/HomeWelcomeCtrl.js"></script>
+        <script src="modules/core/controllers/NewsPageCtrl.js"></script>
+        <script src="modules/core/controllers/ScrollTopCtrl.js"></script>
+        <!-- endinjector -->
+    <!-- endbuild -->
+
+  </body>
+</html>

@@ -1,0 +1,114 @@
+﻿<section class="artists" ng-controller="HomeArtistsCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="artists-header">{{sectionTitle}}</h2>
+                <!--
+                    <h3 class="text-primary">
+                        Разгледайте и изберете татуист
+                    </h3>
+                -->
+                <!-- <hr /> -->
+            </div>
+        </div>
+        <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div ng-class="{'item': true, 'active' : $first}" ng-repeat="artist in artists">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img ng-src="{{artist.image}}" alt="{{artist.name}}" class="img-responsive"/>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="caption">
+                                <h2>
+                                    <strong>{{artist.name}}</strong>
+                                    <br/>
+                                    <span>{{artist.location}}</span>
+                                </h2>
+                                <p>{{artist.bio}}</p>
+                                <br/>
+                                <button type="button" class="btn btn-default btn-lg" id="artist-info-button">
+                                    Виж профила
+                                </button>
+                            </div>
+                            <!-- /.caption -->
+                        </div>
+                        <div class="col-xs-4 col-xs-offset-1">
+                            <!-- 1st row verticaly centered text in the square columns -->
+                            <div class="square img_1-1">
+                            </div>
+                            <div class="square img_1-2">
+                            </div>
+                            <div class="square img_1-3">
+                            </div>
+                            <!-- 2nd row verticaly centered images in square columns -->
+                            <div class="square img_2-1">
+                            </div>
+                            <div class="square img_2-2">
+                            </div>
+                            <div class="square img_2-3">
+                            </div>
+                            <!-- 3rd row responsive images in background with centered content -->
+                            <div class="square img_3-1">
+                            </div>
+                            <div class="square img_3-2">
+                            </div>
+                            <div class="square img_3-3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+            <hr />
+            <ul class="nav nav-pills nav-justified" id="artists">
+                <li data-target="#carousel1" data-toggle="pill" data-slide-to="0" class="active">
+                    <a href="#">
+                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/sauro/128.jpg" alt="Alternate Text"/>
+                    </a>
+                </li>
+                <li data-target="#carousel1" data-toggle="pill" data-slide-to="1">
+                    <a href="#" >
+                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Alternate Text"/>
+                    </a>
+                </li>
+                <li data-target="#carousel1" data-toggle="pill" data-slide-to="2">
+                    <a href="#">
+                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg" alt="Alternate Text"/>
+                    </a>
+                </li>
+                <li data-target="#carousel1" data-toggle="pill" data-slide-to="3">
+                    <a href="#">
+                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/tonystubblebine/128.jpg" alt="Alternate Text"/>
+                    </a>
+                </li>
+                <li data-target="#carousel1" data-toggle="pill" data-slide-to="4">
+                    <a href="#">
+                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/mlane/128.jpg" alt="Alternate Text"/>
+                    </a>
+                </li>
+                <li data-target="#carousel1" data-toggle="pill" data-slide-to="5">
+                    <a href="#">
+                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="Alternate Text"/>
+                    </a>
+                </li>
+                <li data-target="#carousel1" data-toggle="pill" data-slide-to="6">
+                    <a href="#">
+                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/mattsince87/128.jpg" alt="Alternate Text"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <br />
+        <div class="text-center">
+            <a ng-href="/#!/artists" class="btn btn-primary">
+                Виж всички
+                <i class="fa fa-chevron-right">
+                </i>
+            </a>
+        </div>
+    </div>
+</section>
+<!--
+    /.artists
+-->

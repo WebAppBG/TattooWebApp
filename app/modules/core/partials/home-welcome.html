@@ -1,0 +1,30 @@
+﻿<section class="welcome" ng-controller="HomeWelcomeCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h2><strong>{{leftTitle}}</strong></h2>
+                <h3 class="text-primary">{{leftDesc}}</h3> 
+                <p>{{leftContent}}</p>
+                <p>
+                    <i class="fa fa-map-marker"></i>&nbsp; 21-26 Dolomite Street, Plymouth, Devon<br>
+                    <i class="fa fa-clock-o"></i> Monday to Friday 11am - 6pm
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h2><strong>{{rightTitle}}</strong></h2>
+                <h3 class="text-primary">{{rightDesc}}</h3>
+                <div class="row">
+                    <div class="col-md-5">
+                        <a href="#">
+                            <img class="img-responsive" ng-src="{{rightImage}}" alt="{{rightContent}}">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <p class="text-justify">{{rightContent}}</p>
+                        <button type="button" class="btn btn-default" href="javascript:void(0)" onclick="openRegisterModal();">Регистрирай се</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- /.welcome -->

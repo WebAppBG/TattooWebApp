@@ -1,0 +1,111 @@
+﻿<header class="header" id="navigation">
+    <div class="container-fluid" >
+                <div class="pull-left">
+                    <a href="#" class="navbar-brand"><img class="logo" src="http://www.tattoolife.com/TL_NewsletterSubscription/img/tlf-production-logo.png" alt="" /></a>
+                </div>
+        <nav class="navbar navbar-inverse">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse nav-justified">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Начало</a></li>
+                    <li><a href="#">Татуисти</a></li>
+                    <li><a href="#">Галерия</a></li>
+                    <li id="separator"><a href="#">Новини</a></li>
+                    <li class="hidden-xs navbar-center" id="separator">
+                        <span class="fa-stack fa-lg fa-wrap">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x"></i>
+                        </span>
+                        <span class="fa-stack fa-lg fa-wrap">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-google-plus fa-stack-1x"></i>
+                        </span>
+                        <span class="fa-stack fa-lg fa-wrap">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" class="login-button" href="javascript:void(0)" onclick="openLoginModal();"><span>Вход</span></a>
+                    </li>
+                    <li class="line hidden-xs"><span>/</span></li>
+                    <li>
+                        <a href="#" data-toggle="modal" class="register-button" href="javascript:void(0)" onclick="openRegisterModal();"><span>Регистрация</span></a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav><!-- /.navbar -->
+    </div>
+</header><!-- /.header -->
+<div class="modal fade login" id="loginModal">
+    <div class="modal-dialog login animated">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Вход / Регистрация</h4>
+
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content">
+                        <div class="social">
+                            <div class="btn-group btn-group-justified">
+                                <a href="#" class="btn btn-primary" id="FbIcon">Facebook</a>
+                                <a href="#" class="btn btn-danger" id="GIcon">Google+</a>
+                                <!--<a href="#" class="btn btn-info" id="TwitterIcon">Twitter</a>-->
+                            </div>
+
+                        </div>
+                        <div class="division">
+                            <div class="line l"></div>
+                            <span>или</span>
+                            <div class="line r"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="form loginBox">
+                            <form method="post" action="/login" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Потребителско име" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Парола" name="password">
+                                <input class="btn btn-default btn-login" type="button" value="Вход" onclick="loginAjax()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content registerBox" style="display:none;">
+                        <div class="form">
+                            <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Потребителско име" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Парола" name="password">
+                                <input id="password_confirmation" class="form-control" type="password" placeholder="Потвърдете паролата" name="password_confirmation">
+                                <input class="btn btn-default btn-register" type="submit" value="Регистрирай се" name="commit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="forgot login-footer">
+                    <span>
+                        Нямате регистрация?
+                        <a href="javascript: showRegisterForm();">Регистрирай се</a>
+                    </span>
+                </div>
+                <div class="forgot register-footer" style="display:none">
+                    <span>Вече имате регистрация?</span>
+                    <a href="javascript: showLoginForm();">Вход</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

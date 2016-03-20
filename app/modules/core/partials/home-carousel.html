@@ -1,0 +1,39 @@
+<div ng-controller="HomeCarouselCtrl">
+    <!--
+        Carousel
+        ==================================================
+    -->
+    <div id="bgCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bgCarousel" ng-repeat="img in images" class="{'active' : (img === 0)}" data-slide-to="{{img}}">
+            </li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div ng-class="{'item': true, 'active' : (img === 0)}" ng-repeat="img in images">
+                <img ng-src="{{uri}}/{{w}}/{{h}}/{{currentFolder}}/{{img}}" alt="Slide numder {{img}}"/>
+                <!--
+                    <div class="fill" style="background-image: url('{{uri}}/{{w}}/{{h}}/{{currentFolder}}/{{img}}');">
+                    </div>
+                -->
+                <!--
+                    <div class="container">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                -->
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#bgCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left">
+            </span>
+        </a>
+        <a class="right carousel-control" href="#bgCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right">
+            </span>
+        </a>
+    </div>
+    <!-- /.carousel -->
+</div>

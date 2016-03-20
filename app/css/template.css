@@ -1,0 +1,341 @@
+/*GLOBAL STYLES*/
+
+html, body {
+    height: 100%;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+h2, h3 {
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h3 {
+    padding: 5px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.animate-hidden {
+    opacity: 0;
+}
+
+.animate-visible {
+    opacity: 1;
+}
+
+section {
+    padding: 50px 0;
+}
+
+
+
+
+/*WELCOME SECTION*/
+
+.welcome {
+    background: url(../img/bg-welcome.jpg) #191919;
+}
+
+.welcome h2 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.welcome p {
+    color: #777;
+}
+
+.welcome p a {
+    color: #888;
+}
+
+
+/*ARTISTS SECTION*/
+
+.artists h2 {
+    text-transform: uppercase;
+    color: #333;
+}
+
+.artists-header {
+    padding-bottom: 50px;
+    font-weight: 600;
+}
+
+.nav > li > a > img {
+    max-width: 100%;
+}
+
+#carousel1 .nav {
+    background: #eee;
+}
+
+#carousel1 .nav a small {
+    display: block;
+}
+
+.nav-justified > li > a {
+    border-radius: 0;
+}
+
+.square {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+    /* = width for a 1:1 aspect ratio */
+    margin: 1.06%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.img_1-1 {
+    background-image: url('../img/tattoo/1.jpg');
+}
+
+.img_1-2 {
+    background-image: url('../img/tattoo/2.jpg');
+}
+
+.img_1-3 {
+    background-image: url('../img/tattoo/3.jpg');
+}
+
+.img_2-1 {
+    background-image: url('../img/tattoo/4.png');
+}
+
+.img_2-2 {
+    background-image: url('../img/tattoo/5.jpg');
+}
+
+.img_2-3 {
+    background-image: url('../img/tattoo/6.jpg');
+}
+
+.img_3-1 {
+    background-image: url('../img/tattoo/7.jpg');
+}
+
+.img_3-2 {
+    background-image: url('../img/tattoo/8.jpg');
+}
+
+.img_3-3 {
+    background-image: url('../img/tattoo/9.jpg');
+}
+
+#artist-info-button {}
+
+#artists {
+    margin-top: 20px;
+}
+
+hr {
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 3px;
+}
+
+
+/*.nav-pills > li[data-slide-to="0"].active a {
+    background-color: #111;
+}*/
+
+
+/*TESTIMONIALS SECTION*/
+
+.testimonials {
+    background: #191919;
+}
+
+.testimonials p {
+    padding: 0 100px;
+    color: #888;
+}
+
+.testimonials em {
+    color: #666;
+}
+
+.diagonal-background-testimonials-before {
+    width: 100%;
+    height: 0;
+    padding: 7% 0 0;
+    background-size: cover;
+    background-image: url("../img/diagonal-bg-top.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.diagonal-background-testimonials-after {
+    width: 100%;
+    height: 0;
+    padding: 7% 0 0;
+    background-size: cover;
+    background-image: url("../img/diagonal-bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+/*GALLERY SECTION*/
+
+.gallery h2 {
+    color: #333;
+}
+
+.gallery p {
+    color: #555;
+}
+
+.gallery .row div {
+    margin: 20px 0;
+}
+
+
+/*BLOG SECTION*/
+
+.blog {
+    background: #191919;
+}
+
+.blog .grid {
+    max-width: 1170px;
+}
+
+.blog .grid figure {
+    min-width: 350px;
+}
+
+.blog h2 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.blog h3 {
+    padding: 5px 0;
+}
+
+.diagonal-background-blog-before {
+    width: 100%;
+    height: 0;
+    padding: 7% 0 0;
+    background-size: cover;
+    background-image: url("../img/diagonal-bg-blog-before.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.diagonal-background-blog-after {
+    width: 100%;
+    height: 0;
+    padding: 7% 0 0;
+    background-size: cover;
+    background-image: url("../img/diagonal-bg-blog-after.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+/*CONTACT SECTION*/
+
+.contact h2 {
+    color: #333;
+}
+
+.contact h2 span {
+    color: #888;
+}
+
+.contact p {
+    color: #555;
+}
+
+.contact-footer {
+    color: #555;
+}
+
+
+/*FOOTER SECTION*/
+
+footer {
+    height: 450px;
+    padding-top: 30px;
+    background: #111;
+}
+
+footer img {
+    padding: 5px 0;
+}
+
+footer p {
+    color: #888;
+}
+
+footer p a {
+    color: #c7c7c7;
+}
+
+footer p a:hover {
+    text-decoration: none;
+    color: #888;
+}
+
+
+/*SCROLL TOP*/
+
+
+/* Scroll to top*/
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99999999;
+    background-color: #777;
+    color: #eeeeee;
+    width: 40px;
+    height: 38px;
+    line-height: 40px;
+    right: 30px;
+    bottom: 30px;
+    padding-top: 2px;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll-top-inner {
+    font-size: 20px;
+}
+
+.scroll-top-wrapper:hover {
+    background-color: #888;
+}
+
+.scroll-top-wrapper.show {
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1.0;
+}

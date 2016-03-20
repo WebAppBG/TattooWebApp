@@ -1,0 +1,16 @@
+﻿<section class="gallery" ng-controller="HomeGalleryCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2><strong>{{sectionTitle}}</strong></h2>
+                <h3 class="text-primary">{{sectionDesc}}</h3>
+                <p>{{sectionContent}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3" ng-repeat="gallery in tattooGalleries">
+                <a href="#" class="hvr-trim"><img class="img-responsive" ng-src="{{gallery.cover}}" /></a>
+            </div>
+        </div>
+    </div>
+</section><!-- /.gallery -->

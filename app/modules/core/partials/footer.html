@@ -1,0 +1,59 @@
+﻿<footer class="footer" ng-controller="FooterCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="/">
+                    <img src="http://www.tattoolife.com/TL_NewsletterSubscription/img/tlf-production-logo.png" class="img-responsive center-block" title=""/>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <ul>
+                    <li>
+                        <a href="#" title="Видове татуировки">
+                            <h4 class="text-muted">
+                                Видове татуировки
+                            </h4>
+                        </a>
+                    </li>
+                    <li ng-repeat="item in footerTattooTypes">
+                        <a href="{{item.link}}" title="{{item.title}}">
+                            {{item.title}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul>
+                    <li>
+                        <a href="#" title="Нови татуисти">
+                            <h4 class="text-muted">
+                                Нови татуисти
+                            </h4>
+                        </a>
+                    </li>
+                    <li ng-repeat="item in footerTattooArtists">
+                        <a href="{{item.link}}" title="{{item.title}}">
+                            {{item.title}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul>
+                    <li>
+                        <a href="#" title="Последни новини">
+                            <h4 class="text-muted">
+                                Последни новини
+                            </h4>
+                        </a>
+                    </li>
+                    <li ng-repeat="item in footerLatestNews">
+                        <a href="{{item.link}}" title="{{item.title}}">
+                            {{item.title}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

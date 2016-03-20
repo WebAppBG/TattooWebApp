@@ -1,0 +1,30 @@
+﻿<section class="contact" ng-controller="HomeContactsCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h2><strong>{{sectionTitle}}</strong></h2>
+                <h3 class="text-primary">{{sectionDesc}}</h3>
+                <p>{{sectionContent}}</p>
+                <p><i class="fa fa-map-marker"></i>&nbsp; {{address}} (<a href="#" title="find us on map" target="_blank">See Google map</a>)</p>
+                <p><i class="fa fa-clock-o"></i> {{workingHours}}</p>
+                <p>
+                    <a href="tel:+359800000000" title="call us on phone" target="_blank" id="link-phone">
+                        <span class="contact-footer"><i class="fa fa-phone"></i> {{phone}}</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:info@tattoostudio.com" title="call us on phone" target="_blank" id="link-phone">
+                        <span class="contact-footer"><i class="fa fa-envelope"></i> {{email}}</span>
+                    </a>
+                </p>
+                <!-- Button trigger modal -->
+                <a class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+                    Регистрация
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" ng-src="{{contactsImage}}" />
+            </div>
+        </div>
+    </div>
+</section><!-- /.contact -->
